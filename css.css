@@ -1,0 +1,61 @@
+h1 {
+  color: black;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.box {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 50px;
+  border: 5px dashed black;
+}
+
+.button {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  flex: wrap;
+  color: white;
+  transform: 1s;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  border: 5px dashed black;
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+#red-button {
+  background-color: red;
+}
+#blue-button {
+  background-color: blue;
+}
+#green-button {
+  background-color: green;
+}
+#pink-button {
+  background-color: pink;
+}
+
+.boxContainer {
+  margin-top: 20px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
