@@ -1,13 +1,18 @@
 var title = document.getElementById('titleHello')
+var displayR = document.getElementById('displayResult')
 let changingBox = document.getElementById('square')
 let userChoice
-let index = 0;
+let index = 0
 let colors = ['red', 'green', 'blue', 'pink']
+let correctR = document.getElementById("cr")
+let incorrectR = document.getElementById("ir")
+let tallyC = 0;
+let tallyIc = 0;
 
-setInterval(function(){
+setInterval(function () {
   title.style.color = colors[index]
-  index = (index + 1) % colors.length;
-}, 1000);
+  index = (index + 1) % colors.length
+}, 1000)
 
 const redButton = document.getElementById('red-button')
 redButton.addEventListener('click', function () {
@@ -37,8 +42,12 @@ function colorChange() {
   let randomColor = colors[Math.floor(Math.random() * 4)]
   changingBox.style.backgroundColor = randomColor
   if (userChoice === randomColor) {
-    title.innerHTML = 'Correct, well done!'
+    displayR.innerHTML = 'Correct 😀'
+    tallyC++;
+    correctR.innerHTML = tallyC;
   } else {
-    title.innerHTML = 'Try again'
+    displayR.innerHTML = 'Try again 💀'
+    tallyIc++;
+    incorrectR.innerHTML = tallyIc;
   }
 }

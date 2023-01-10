@@ -5,6 +5,12 @@ h1 {
   padding-top: 100px;
 }
 
+#displayResult {
+  text-align: center;
+  margin: 0
+  padding: 0;
+}
+
 .box {
   align-items: center;
   margin: auto;
@@ -58,4 +64,17 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 20px;
+}
+/* 
+.result {
+  text-align: center;
+} */
+
+.resultDiv {
+  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+
 }
